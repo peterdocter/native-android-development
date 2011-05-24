@@ -1,0 +1,7 @@
+#summary Using Ubuntu for ARM as a native development environment for Android.
+#labels Featured
+
+= Introduction =
+
+The relative lack of development tools currently on Android makes it somewhat difficult to develop natively on the platform.  On the other
+hand, Ubuntu provides a very rich development environment.  Luckily Ubuntu can be configured to run quite well in tandem with Android, and (I believe) can be very useful in bootstrapping a native development environment for Android.
