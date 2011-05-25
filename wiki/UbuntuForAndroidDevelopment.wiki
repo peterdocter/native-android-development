@@ -23,7 +23,7 @@ Note:  Most of this information was derived from:
 
 http://androlinux.com/android-ubuntu-development/how-to-build-chroot-arm-ubuntu-images-for-android/
 
-# Use rootstock to create the image contents:
+1) Use rootstock to create the image contents:
 
 {{{
 sudo apt-get install rootstock
@@ -38,20 +38,20 @@ armel-rootfs-201105241813.tgz
 
 You can add additional packages by simply adding packages to the --seed list.
 
-# Create the empty disk image and format it:
+2) Create the empty disk image and format it:
 
 {{{
 dd if=/dev/zero of=ubuntu.img bs=1MB count=0 seek=4096
 mke2fs -F ubuntu.img
 }}}
 
-# Now we need to mount the disk image:
+3) Now we need to mount the disk image:
 
 {{{
 sudo mount -o loop ubuntu.img /mnt
 }}}
 
-# And finally, copy our image contents onto the disk image and unmount it:
+4) And finally, copy our image contents onto the disk image and unmount it:
 
 {{{
 sudo tar -C /mnt --preserve -xvzf armel-rootfs-201105241813.tgz
