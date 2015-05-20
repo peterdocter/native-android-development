@@ -1,0 +1,1 @@
+The goal of this project is to develop a suite of applications that can support development natively on android.  The initial effort will consist of building a native NDK compiler, and using that to build other libraries and applications (bash, coreutils, emacs, etc).
